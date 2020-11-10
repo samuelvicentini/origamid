@@ -1,8 +1,8 @@
-# Origamid Cursos 🐺
+# [Origamid Cursos](https://www.origamid.com) 🐺
 
 ## Cursos da plataforma
 
-- [ ] Web Designer Completo
+- [ ] [Web Designer Completo](bikcraft/)
 - [ ] WordPress Como CMS
 - [ ] CSS Avançado Posicionamento
 - [ ] CSS Grid Layout
@@ -20,5 +20,3 @@
 - [ ] UI Design Avançado
 - [ ] UX Design Heurísticas
 - [ ] Tipografia Avançada
-
-### site: https://www.origamid.com/
