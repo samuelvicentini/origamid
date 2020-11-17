@@ -1,22 +1,10 @@
 # Web Design Completo
 
-<img 
-src="./assets/desktop.gif"
-alt="Markdown Monster icon"
-width="200"
-style="float: left; margin-right: 10px;" />
+![Desktop](assets/desktop.gif)
 
-<img 
-src="./assets/tablet.gif"
-alt="Markdown Monster icon"
-width="130"
-style="float: left; margin-right: 10px;" />
+![Tablet](assets/tablet.gif)
 
-<img 
-src="./assets/smartphone.gif"
-alt="Markdown Monster icon"
-width="120"
-style="float: left;" />
+![Smartphone](assets/smartphone.gif)
 
 ## Sobre
 
