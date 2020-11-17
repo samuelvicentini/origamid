@@ -2,7 +2,8 @@
 
 ## Cursos da plataforma
 
-- [ ] [Web Designer Completo](bikcraft/)
+- [x] [Web Designer Completo](bikcraft/)
+
 - [ ] WordPress Como CMS
 - [ ] CSS Avançado Posicionamento
 - [ ] CSS Grid Layout
