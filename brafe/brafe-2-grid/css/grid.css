@@ -21,7 +21,8 @@
 .grid-9,
 .grid-10,
 .grid-11,
-.grid-12 {
+.grid-12,
+.grid-mobile-6 {
   margin: 0 10px;
   float: left;
   display: block;
@@ -76,6 +77,25 @@
   width: calc(100% - 20px);
 }
 
+.grid-mobile-6 {
+  width: calc(50% - 20px);
+}
+
+.row,
+.row-mobile {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.row::after,
+.row::before,
+.row-mobile::after,
+.row-mobile::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media (max-width: 739px) {
   .container {
     max-width: 300px;
@@ -96,5 +116,9 @@
     width: 100%;
     margin: 0;
     float: none;
+  }
+
+  .row {
+    margin: 0px;
   }
 }
