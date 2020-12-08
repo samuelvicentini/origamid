@@ -68,6 +68,13 @@ a {
 
 /* Main */
 
+.main-container::after,
+.main-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /* Side nav */
 
 .side-nav {
@@ -117,4 +124,37 @@ a {
 
 .nav-hospedagens::before {
   background-position: 0 calc(-24px * 5);
+}
+
+/* Produtos */
+
+.produtos {
+  float: left;
+  width: calc(100% - 300px);
+  margin: 0 auto;
+  max-height: 960px;
+  padding: 20px;
+}
+
+.produtos header::after,
+.produtos header::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.produtos h1 {
+  font-size: 2.25em;
+  float: left;
+}
+
+.adicionar-produtos {
+  background: #c17139;
+  color: #d6d3c8;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 4px;
+  float: right;
+  text-align: center;
 }
