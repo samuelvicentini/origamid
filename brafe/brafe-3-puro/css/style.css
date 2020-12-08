@@ -158,3 +158,58 @@ a {
   float: right;
   text-align: center;
 }
+
+.produtos-item {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+  margin-top: 20px;
+  position: relative;
+}
+
+.produtos-item::after,
+.produtos-item::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.produtos-item img {
+  float: left;
+}
+
+.produtos-item a {
+  width: 24px;
+  height: 24px;
+  text-indent: -200px;
+  overflow: hidden;
+  position: absolute;
+  background: url(../img/edit.svg) no-repeat;
+  right: 20px;
+  top: 10px;
+}
+
+.produtos-item a:hover {
+  background: url(../img/edit-hover.svg) no-repeat;
+}
+
+.produtos-item ul {
+  float: left;
+  padding: 0 20px;
+  width: calc(100% - 140px);
+}
+
+.produtos-item li {
+  padding: 10px 0;
+  font-size: 1.125em;
+  border-bottom: 1px solid #e7e4d8;
+}
+
+.produtos-item li:last-child {
+  border-bottom: none;
+}
+
+.produtos-item span {
+  font-weight: bold;
+  width: 70px;
+  display: inline-block;
+}
