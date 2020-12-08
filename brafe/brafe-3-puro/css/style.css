@@ -1,9 +1,13 @@
-body, p, h1, ul, li {
+body,
+p,
+h1,
+ul,
+li {
   padding: 0;
   margin: 0;
 }
 
-li  {
+li {
   list-style: none;
 }
 
@@ -60,4 +64,57 @@ a {
 
 .header-menu li:first-child a {
   padding-left: 0;
+}
+
+/* Main */
+
+/* Side nav */
+
+.side-nav {
+  width: 300px;
+  background: #252525;
+  float: left;
+}
+
+.side-nav li a {
+  display: block;
+  color: #fff;
+  border-bottom: solid 2px #484846;
+  font-size: 1.125em;
+  padding: 20px;
+}
+
+.side-nav li a::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  margin-right: 15px;
+  position: relative;
+  background-image: url(../img/icones.png);
+}
+
+.nav-contabilidade::before {
+  background-position: 0px 0px;
+}
+
+.nav-produtos::before {
+  background-position: 0px -24px;
+}
+
+.nav-paginas::before {
+  background-position: 0 calc(-24px * 2);
+}
+
+.nav-plugins::before {
+  background-position: 0 calc(-24px * 3);
+}
+
+.nav-formularios::before {
+  background-position: 0 calc(-24px * 4);
+}
+
+.nav-hospedagens::before {
+  background-position: 0 calc(-24px * 5);
 }
