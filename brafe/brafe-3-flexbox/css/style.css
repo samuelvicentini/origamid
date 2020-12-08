@@ -38,6 +38,15 @@ a {
   display: flex;
 }
 
+.header-logo {
+  flex-grow: 1;
+}
+
+.header-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header-menu li a {
   color: #252525;
   font-size: 1.125em;
@@ -49,23 +58,28 @@ a {
 }
 
 @media (max-width: 739px) {
-  .header-logo {
-    float: none;
+  .header {
+    flex-direction: column;
   }
 
-  .header-menu ul {
-    float: none;
+  .header-menu {
     margin-top: 10px;
   }
 }
 
 /*MAIN*/
 
+.main-container {
+  display: flex;
+}
 
 /*SIDE NAV*/
 
 .side-nav {
   background: #252525;
+  flex: 1;
+  max-width: 300px;
+  margin-right: 10px;
 }
 
 .side-nav li a {
@@ -113,7 +127,42 @@ a {
 
 @media (min-width: 740px) and (max-width: 980px) {}
 
-@media (max-width: 739px) {}
+@media (max-width: 739px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .side-nav {
+    margin: 10px;
+    background: none;
+    max-width: 100%;
+  }
+
+  .side-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .side-nav li {
+    margin: 0 10px 10px 0;
+  }
+
+  .side-nav li a::before {
+    top: 0;
+    margin: 0;
+  }
+
+  .side-nav li a {
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    border: none;
+    padding: 10px;
+    color: #252525;
+    background: #252525;
+    border-radius: 4px;
+  }
+}
 
 /* Produtos */
 
