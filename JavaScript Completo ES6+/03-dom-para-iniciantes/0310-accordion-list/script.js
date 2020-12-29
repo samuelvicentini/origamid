@@ -60,3 +60,22 @@ function initScrollSuave() {
   })
 }
 initScrollSuave()
+
+
+function animationScroll() {
+  const sections = document.querySelectorAll('.js-scroll');
+  const heightScreen = window.innerHeight * 0.6
+
+  function animaScroll() {
+    sections.forEach(section => {
+      const top = section.getBoundingClientRect().top - heightScreen;
+      if(top < 0) {
+        section.classList.add('ativo');
+      }
+    })
+  }
+
+  animaScroll()
+
+  window.addEventListener('scroll', animaScroll)
+}
