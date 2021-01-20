@@ -230,7 +230,16 @@ html.change-font { font-size: 120%; }
   animation: show .5s forwards;
 }
 
-@keyframes show {
+.js .js-tabcontent section.ativo.show-right {
+  display: block;
+  animation: show-right .5s forwards;
+}
+
+.js .js-tabcontent section.ativo.show-down {
+  display: block;
+  animation: show-down .5s forwards;
+}
+@keyframes show-right {
   from {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
@@ -242,6 +251,17 @@ html.change-font { font-size: 120%; }
   }
 }
 
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 /* accordion */
 .js .js-accordion dd {
   display: none;

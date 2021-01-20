@@ -12,7 +12,7 @@ function initTabNav() {
         section.classList.remove('ativo');
       });
       //add active to section
-      tabContent[index].classList.add('ativo');
+      tabContent[index].classList.add('ativo', tabContent[index].dataset.anime);
     }
 
     tabMenu.forEach((itemMenu, index) => {
